@@ -23,7 +23,8 @@ noremap <C-k> :tabp<CR>
 noremap <C-j> :tabn<CR>
 noremap! <C-k> <C-[>:tabp<CR>
 noremap! <C-j> <C-[>:tabn<CR>
-noremap <C-t> :tabe 
+noremap <C-t> :tabnew<CR> 
+noremap <C-y> :tabe  
 
 " Basic Editing keybindings (Cut/Copy/Paste)
 vnoremap <C-x> "+x
