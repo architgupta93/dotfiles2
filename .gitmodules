@@ -32,3 +32,6 @@
 [submodule "vim/bundle/tagbar"]
 	path = vim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar
+[submodule "vim/bundle/vim-easytags"]
+	path = vim/bundle/vim-easytags
+	url = https://github.com/xolox/vim-easytags
