@@ -23,7 +23,10 @@ noremap <C-k> :tabp<CR>
 noremap <C-j> :tabn<CR>
 noremap! <C-k> <C-[>:tabp<CR>
 noremap! <C-j> <C-[>:tabn<CR>
-noremap <C-t> :tabe 
+noremap <C-y> :tabe 
+
+" Toggle the tagbar
+noremap <C-t> :TagbarToggle<CR>
 
 " Basic Editing keybindings (Cut/Copy/Paste)
 vnoremap <C-x> "+x
@@ -37,6 +40,8 @@ inoremap <C-a> <esc>"+gPi
 
 " If we don't use noremap, the call 'nnoremap <C-j> J' recursively calls 
 " 'nnoremap J <C-e>', and we basically lose the functionality for joining lines.
+inoremap <C-i> <Home>
+inoremap <C-a> <End>
 nnoremap J <C-e>	
 nnoremap K <C-y>
 filetype plugin indent on
