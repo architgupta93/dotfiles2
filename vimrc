@@ -1,4 +1,4 @@
-" makes vim load plugins automatically
+"" makes vim load plugins automaticall2
 execute pathogen#infect()
 
 filetype plugin on
@@ -27,6 +27,16 @@ noremap <C-y> :tabe
 
 " Toggle the tagbar
 noremap <C-t> :TagbarToggle<CR>
+noremap <C-u> :UpdateTags<CR>
+let g:tagbar_type_matlab= {
+            \ 'ctagstype' : 'MatLab',
+			\ 'kinds' : [
+			\'c:classes',
+			\'f:fields',
+			\'m:methods',
+			\'F:functions',
+			\ ]
+			\ }
 
 " Basic Editing keybindings (Cut/Copy/Paste)
 vnoremap <C-x> "+x
