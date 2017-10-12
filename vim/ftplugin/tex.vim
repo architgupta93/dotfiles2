@@ -37,9 +37,6 @@ set switchbuf+=usetab,newtab
 " save and compile combination
  nnoremap <Leader>lw :up!<cr>:call Tex_RunLaTeX()<cr>
 
-" set C-h to do nothing
-imap <C-h> <nop>
-
 " Set the warning messages to ignore.
 let g:Tex_IgnoredWarnings =
 \"Underfull\n".
