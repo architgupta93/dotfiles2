@@ -1,6 +1,27 @@
 " this mostly a matter of taste. but LaTeX looks good with just a bit
 " of indentation.
-set shiftwidth=2
+set shiftwidth=4
+
+set wrap
+set linebreak
+set breakindent " visually idents wrapped lines!
+set showbreak=\ \ " does breakindent properly on "bulletted" lists, see https://github.com/vim-pandoc/vim-pandoc-syntax/issues/161
+set nolist  " list disables linebreak
+set wrapmargin=0
+set textwidth=0
+set formatoptions-=t "If you want to keep your existing 'textwidth' settings for most lines in your file, but not have Vim automatically reformat when typing on existing lines 
+
+"These remap hjkl to the g versions, which go visually, including on wrapped lines: If you're tired of the cursor jumping past 5 lines when :set wrap then add these mappings to your vimrc file.
+nnoremap j gj
+nnoremap k gk
+vnoremap j gj
+vnoremap k gk
+nnoremap <Down> gj
+nnoremap <Up> gk
+vnoremap <Down> gj
+vnoremap <Up> gk
+inoremap <Down> <C-o>gj
+
 " TIP: if you write your \label's as \label{fig:something}, then if you
 " type in \ref{fig: and press <C-n> you will automatically cycle through
 " all the figure labels. Very useful!
