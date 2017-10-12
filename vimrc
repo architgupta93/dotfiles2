@@ -25,9 +25,11 @@ noremap! <C-k> <C-[>:tabp<CR>
 noremap! <C-j> <C-[>:tabn<CR>
 noremap <C-y> :tabe 
 
-" Toggle the tagbar
-noremap <C-t> :TagbarToggle<CR>
-noremap <C-u> :UpdateTags<CR>
+" Tagbar options
+nnoremap <C-t> :TagbarToggle<CR>
+nnoremap <C-i> :TlistToggle<CR>
+nnoremap <M-t> :TlistAddFilesRecursive ./<CR>
+nnoremap <C-u> :NERDTreeToggle<CR>
 let g:tagbar_type_matlab= {
             \ 'ctagstype' : 'MatLab',
 			\ 'kinds' : [
@@ -86,3 +88,23 @@ nmap <leader>s <Plug>(LoupeClearHighlight)
 " don't center results
 let g:LoupeCenterResults=0
 let g:LoupeVeryMagic=0
+
+" Easy align
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+
+" Ranger Keybindings
+nmap <C-Q> :RangerNewTab<C-M>
+
+" Syntax checking option
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
