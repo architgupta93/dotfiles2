@@ -53,3 +53,6 @@
 [submodule "vim/bundle/vim-colors-solarized"]
 	path = vim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized
+[submodule "vim/bundle/vim-easygrep"]
+	path = vim/bundle/vim-easygrep
+	url = https://github.com/dkprice/vim-easygrep

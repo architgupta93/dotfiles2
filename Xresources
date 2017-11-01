@@ -190,3 +190,94 @@ xpdf*antialias:         yes
 xpdf*foreground:        black
 xpdf*background:        white
 xpdf*urlCommand:        /usr/bin/firefox %s
+
+!!------------------solarized color scheme--------------------------------------
+!! setting for getting colorized colors right
+!
+!XTerm*background:            S_base03
+!XTerm*foreground:            S_base0
+!XTerm*fadeColor:             S_base03
+!XTerm*cursorColor:           S_base1
+!XTerm*pointerColorBackground:S_base01
+!XTerm*pointerColorForeground:S_base1
+!
+!#define S_yellow        #b58900
+!#define S_orange        #cb4b16
+!#define S_red           #dc322f
+!#define S_magenta       #d33682
+!#define S_violet        #6c71c4
+!#define S_blue          #268bd2
+!#define S_cyan          #2aa198
+!#define S_green         #859900
+!
+!!! black dark/light
+!XTerm*color0:                S_base02
+!XTerm*color8:                S_base03
+!
+!!! red dark/light
+!XTerm*color1:                S_red
+!XTerm*color9:                S_orange
+!
+!!! green dark/light
+!XTerm*color2:                S_green
+!XTerm*color10:               S_base01
+!
+!!! yellow dark/light
+!XTerm*color3:                S_yellow
+!XTerm*color11:               S_base00
+!
+!!! blue dark/light
+!XTerm*color4:                S_blue
+!XTerm*color12:               S_base0
+!
+!!! magenta dark/light
+!XTerm*color5:                S_magenta
+!XTerm*color13:               S_violet
+!
+!!! cyan dark/light
+!XTerm*color6:                S_cyan
+!XTerm*color14:               S_base1
+!
+!!! white dark/light
+!XTerm*color7:                S_base2
+!XTerm*color15:               S_base3
+ 
+!------------------solarized color scheme--------------------------------------
+
+------------------zenburn color scheme----------------------------------------
+XTerm*background              :#1f1f1f
+XTerm*foreground              :#dcdccc
+
+! black + red
+!URxvt.color0                 :#3f3f3f
+XTerm*color0                  :#1f1f1f
+XTerm*color1                  :#705050
+
+! green + yellow
+XTerm*color2                  :#60b48a
+XTerm*color3                  :#dfaf8f
+
+! blue + purple
+XTerm*color4                  :#506070
+XTerm*color5                  :#dc8cc3
+
+! cyan + white
+XTerm*color6                  :#8cd0d3
+XTerm*color7                  :#dcdccc
+
+! bright-black + bright-red
+XTerm*color8                  :#709080
+XTerm*color9                  :#dca3a3
+
+! bright-green + bright-yellow
+XTerm*color10                 :#c3bf9f
+XTerm*color11                 :#f0dfaf
+
+! bright-blue + bright-purple
+XTerm*color12                 :#94bff3
+XTerm*color13                 :#ec93d3
+
+! bright-cyan + bright-white
+XTerm*color14                 :#93e0e3
+XTerm*color15                 :#ffffff
+------------------zenburn color scheme----------------------------------------
