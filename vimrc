@@ -1,4 +1,4 @@
-"" makes vim load plugins automaticall2
+"" makes vim load plugins automatically
 execute pathogen#infect()
 
 filetype plugin on
@@ -73,6 +73,16 @@ nmap <C-H> :GitGutterPreviewHunk<C-M>
 nmap <C-L> :GitGutterUndoHunk<C-M>
 nmap <C-N> :GitGutterNextHunk<C-M>
 nmap <C-G> :GitGutterPrevHunk<C-M>
+
+" Fugitive Key-Bindings
+nnoremap <space>gd :Gdiff<CR>
+nnoremap <space>gl :silent! Glog<CR>:bot copen<CR>
+nnoremap <space>gb :Gblame<CR>
+" Stage the current file, check status, commit
+nnoremap <space>ga :Gwrite<CR>
+nnoremap <space>gs :Gstatus<CR>
+nnoremap <space>gt :Gcommit -v -q %:p<CR>
+nnoremap <space>gc :Gcommit -v -q<CR>
 
 "DelimitMate plugin options
 let delimitMate_autoclose=1

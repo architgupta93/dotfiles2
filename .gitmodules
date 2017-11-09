@@ -56,3 +56,6 @@
 [submodule "vim/bundle/vim-easygrep"]
 	path = vim/bundle/vim-easygrep
 	url = https://github.com/dkprice/vim-easygrep
+[submodule "vim/bundle/vim-fugitive"]
+	path = vim/bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
