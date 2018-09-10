@@ -1,0 +1,5 @@
+text/html; w3m -I %{charset} -T text/html; copiousoutput;
+application/pdf; zathura %s;
+audio/*; mplayer %s;
+image/*; atril-previewer %s;
+application/*.document; libreoffice %s;
