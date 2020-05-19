@@ -24,6 +24,10 @@ noremap! <C-k> <C-[>:tabp<CR>
 noremap! <C-j> <C-[>:tabn<CR>
 noremap <C-y> :tabe 
 
+" Fix for virtual environments
+let g:python_host_prog='/usr/bin/python'
+let g:ycm_use_clangd = 0
+
 " Tagbar options
 nnoremap <C-t> :TagbarToggle<CR>
 nnoremap <C-i> :TlistToggle<CR>
@@ -47,6 +51,7 @@ vnoremap <C-a> d"+gP
 "been selected and paste the contents of the clipboard instead 
 nnoremap <C-a> "+gP
 inoremap <C-a> <esc>"+gPi	
+
 "If we started in the insert mode, we should remain in the insert mode
 
 " If we don't use noremap, the call 'nnoremap <C-j> J' recursively calls 
